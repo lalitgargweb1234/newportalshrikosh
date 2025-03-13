@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shrikosh</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="test.js"></script>
+</head>
+
+<body>
+  <div class="navbar1">
+    <div class="main-nav">
+      <a href="#">HOME</a>
+      <a href="ABOUT.HTML">ABOUT US</a>
+      <a href="#"><i class="fa-solid fa-phone"></i>CONTACT US</a>
+
+    </div>
+  </div>
+  <div class="logo-middle">
+    <span><p>Generics</p></span>
+    <div class="main-logo">
+    </div>
+    <p>surgicals</p>
+  </div>
+
+  <div class="categorysection">
+    <h1>Only our one priority to keep you healthy<i class="fa-solid fa-heart"></i></h1>
+    <p><i class="fa-regular fa-handshake"></i></p>
+    <h2>"<i class="fa-solid fa-truck-droplet"></i>Delivering health and wellness through a seamless supply chain."</h2>
+    <h3>Shreekosh by Varek Pharmasol: Ensuring<br> Guaranteed 24-Hour Delivery, Wide Variety of <br>Medicines, and Flexible Cash Trade for<br> pharmacies nationwide.</h3>
+    
+  </div>
+  
+
+  <h1 id="shopheading">Shop by category:<i class="fa-solid fa-arrow-right" ></i> <a href="allproducts.html" loading="lazy">For all></a></h1>
+  
+  <div class="content-section">
+    <div class="sub box-1">
+     <p>Personal care</p>
+      <div class="boximagecontent put-image1"> </div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-2">
+      <p>Multivitamins </p>
+      <div class="boximagecontent put-image2"> </div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-3">
+      <p>Digestive enzymes </p> 
+      <div class="boximagecontent put-image3"></div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-4">
+      <p>Antibiotics</p>
+      <div class="boximagecontent put-image4"></div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-5">
+      <p>Ayurvedics </p>
+      <div class="boximagecontent"></div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-6">
+      <p>General items(otc) </p>
+      <div class="boximagecontent"></div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-7">
+      <p>personal care </p>
+      <div class="boximagecontent"></div>
+      <a href="#">see more</a>
+    </div>
+    <div class="sub box-8">
+      <p>personal care </p>
+      <div class="boximagecontent"></div>
+      <a href="#">see more</a>
+    </div>
+  </div>
+   
+
+
+  <form id="firstclass">
+      Enter your details: -<br>
+    User id :<input id="user" type="text"><br>
+    Password: <input id="pass" type="password"><br>
+    <button style="background: green"  onclick="test()">log in </button>
+     
+  </form>
+  
+  <script>
+        // Redirect if user is not logged in
+        if (sessionStorage.getItem("loggedIn") !== "true") {
+            alert("Access denied! Please log in first.");
+            window.location.href = "index.html"; // Redirect to login page
+        }
+
+        function logout() {
+            sessionStorage.removeItem("loggedIn"); // Remove session data
+            window.location.href = "index.html"; // Redirect to login
+        }
+    </script>
+
+
+
+</body>
+</html>

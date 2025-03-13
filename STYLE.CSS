@@ -1,0 +1,289 @@
+*{
+    padding: 0px;
+    margin: 2.5px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.navbar1{
+    height: 60px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    
+   
+    
+}
+.main-nav{
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+
+    
+}
+.main-nav a{
+    color: aqua;
+    text-decoration: none;
+    box-shadow: 3px 3px 2px 2px aqua;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: smaller;
+    letter-spacing: 5px;
+  
+}
+
+.main-nav a:hover{
+    scale: 1.12;
+}
+.navbar1::before{
+    content: '';
+    margin: 0px;
+    padding: 0px;
+    width: 80px;
+    height: 60px;
+    background-image: url(shrikoshlogo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5px;
+    left: -50%;
+    
+
+    
+}
+
+.logo-middle{
+    background-color: #180c27;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.main-logo{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main-logo::before{
+    content: '';
+    height: 50px;
+    width: 100px;
+    background: conic-gradient(black, aqua);
+    position: absolute;
+    animation-name: main-logorotater;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.main-logo::after{
+    content: '';
+    height: 88%;
+    width: 94%;
+    background-image: url(Screenshot\ 2024-05-22\ 093706.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: black;
+    margin: 3% 3%;
+}
+
+@keyframes main-logorotater{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main-logo:hover{
+    scale: 1.125;
+}
+
+.logo-middle p {
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+.logo-middle p:hover{
+    cursor: pointer;
+    border: 2px solid aqua;
+}
+
+.categorysection{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(115, 123, 123) inset;
+}
+.categorysection h1,h2{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px rgb(14, 203, 203);
+}
+.categorysection h3{
+    text-align: center;
+    font-size: large;
+    text-shadow: 2px 2px rgb(14, 203, 203);
+}
+.categorysection p{
+    font-size: 250%;
+    text-align: center;
+}
+#shopheading{
+    background-color: #aae2df;
+}
+#shopheading::first-letter{
+    font-size: 3rem;
+}
+
+
+
+.content-section{
+    height: 800PX;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    background-color: #aae2df;
+}
+.sub{
+    background-color: #caf2f1;
+    box-shadow: 2px 2px 3px 3px #81d9dd ;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.sub p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    
+    
+}
+.sub a {
+    text-align: center;
+}
+.boximagecontent{
+    height: 75%;
+    width: 90%;
+    background-color: white;
+   
+    border: 2px solid white;
+    position: relative;
+    left: 5%;
+    overflow: hidden;
+
+}
+
+.put-image1:hover{
+    background-size: scale(1.5);
+}    
+
+.sub p::first-letter{
+    font-size: larger;
+}
+.put-image1{
+    background-image: url(personalimage.jpg);
+    background-size: cover;
+
+}
+.put-image2{
+    background-image: url(multivitamins.jpg);
+    background-size: cover;
+}
+.put-image3{
+    background-image: url(digestiveimage.jpg);
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*startmediaqueries*/
+@media screen and (max-width: 400px) {
+    .content-section{
+        grid-template-columns: 1fr;
+        height: 2000px;
+
+    }
+    
+    .navbar1{
+        height: 60px;
+        width: 100%;
+        background: black;
+        
+        
+    }
+    .main-nav{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    .categorysection{
+        height: 105%px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px)  {
+    .content-section{
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+    }
+    .box-5,.box-6,.box-7,.box-8{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 1500px)  {
+    .content-section{
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 800px;
+    
+    }
+    .box-7, .box-8{
+        display: none;
+    }
+}
+
+#firstclass {
+    margin: auto;
+    height: 200px;
+    width: 350px;
+    background-color: aqua;
+    font-weight: 700;
+    color: #180c27;
+    letter-spacing: 2px;
+    
+}
+
+
